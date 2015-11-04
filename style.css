@@ -8,6 +8,7 @@ h1 {
 	vertical-align: middle;
 	text-align: center;
 	display:block;
+	color: black;
 }
 .pic{
 	height: 100px;
@@ -20,5 +21,9 @@ h1 {
 	/*margin-left: 50px;*/
 	display: inline-block;
 	vertical-align: middle;
-
+	font-family: "Times New Roman", Times, serif;
+	color: black;
+}
+body {
+	background-color: cyan;
 }
