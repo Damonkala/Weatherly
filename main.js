@@ -72,6 +72,7 @@ function getWeather(){
 	if($('#zip').val() !== ""){
 		$('#current').html("");
 		var zipNumber = $('#zip').val();
+
 		var url = apiUrl + "conditions/q/CA/" + zipNumber + ".json";
 
 		$.get(url)
@@ -100,8 +101,8 @@ function getWeather(){
 			var $day1F = $('<p>').text(data.forecast.simpleforecast.forecastday[0].low.fahrenheit + "°f");
 			var $day1C = $('<p>').text(data.forecast.simpleforecast.forecastday[0].low.celsius + "°c");
 			var $dat1W = $('<p>').text(data.forecast.txt_forecast.forecastday[0].fcttext_metric);
-
 			$('#day1').append($day1Day, $day1Icon, $day1C, $day1F,$dat1W);
+			
 			var $day2Day = $('<p>').text(data.forecast.simpleforecast.forecastday[1].date.weekday);
 			var $day2Icon = $('<img>').attr('src', data.forecast.simpleforecast.forecastday[1].icon_url);
 			var $day2F = $('<p>').text(data.forecast.simpleforecast.forecastday[1].low.fahrenheit + "°f");
