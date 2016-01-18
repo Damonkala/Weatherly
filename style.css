@@ -22,8 +22,13 @@ h1 {
 	display: inline-block;
 	vertical-align: middle;
 	font-family: "Times New Roman", Times, serif;
-	color: black;
+	/*color: black;*/
 }
 body {
-	background-color: cyan;
+	background-image: url("https://pixabay.com/static/uploads/photo/2015/11/15/11/59/beautiful-1044223_960_720.jpg");
+	background-size: cover;
+}
+*{
+	color: white;
+	-webkit-text-stroke: 1px black;
 }
